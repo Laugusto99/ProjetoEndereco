@@ -3,6 +3,10 @@ function buscarEndereco() {
 
   let url = `https://viacep.com.br/ws/${cep}/json/`
 
+  if (cep.length < 8) {
+    alert('Cep não encontrado!')
+  }
+
   fetch(url).then(function (response) {
     response.json().then(mostrarEndereco)
   })
@@ -11,7 +15,7 @@ function buscarEndereco() {
 function mostrarEndereco(dados) {
   let resultado = document.querySelector('#resultado')
   if (dados.erro) {
-    resultado.innerHTML = 'Não foi possível localizar o endereço!'
+    alert('Não foi possível localizar o endereço!')
   } else {
     resultado.innerHTML = `<p>Logradouro: ${dados.logradouro}</p>
                            <p>Complemento: ${dados.complemento}</p> 

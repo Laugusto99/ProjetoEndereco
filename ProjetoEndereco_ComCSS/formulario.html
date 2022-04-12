@@ -14,8 +14,7 @@
         <fieldset>
         <legend>ENDEREÇO</legend>
         <label>INSIRA SEU CEP NO CAMPO ABAIXO:</label>
-        <div>
-            <p><input type="text" name="cep" id="cep"/></p>
+            <p><input type="text" name="cep" id="cep" onblur="validacep(this);" maxlength="8"/></p>
             <button class="botao_consulta" onclick="buscarEndereco()">CONSULTAR CEP</button>
             <div id="resultado">
         </div>
