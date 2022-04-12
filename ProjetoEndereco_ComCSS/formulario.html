@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Cep</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="logo"><img src="img/logo.png" width="500" height="150"></div>
+    <h1 class="centro">CONSULTOR DE ENDEREÇO</h1>
+    <h2 class="centro">
+        <fieldset>
+        <legend>ENDEREÇO</legend>
+        <label>INSIRA SEU CEP NO CAMPO ABAIXO:</label>
+        <div>
+            <p><input type="text" name="cep" id="cep" maxlength="8"/></p>
+            <button class="botao_consulta" onclick="buscarEndereco()">CONSULTAR CEP</button>
+            <div id="resultado">
+        </div>
+    </fieldset>
+    <script src="enderecoFormulario.js"></script>
+</body>
+</html>

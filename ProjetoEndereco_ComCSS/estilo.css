@@ -1,0 +1,32 @@
+body {
+    background-image: linear-gradient(to right ,rgb(91, 21, 220) ,rgb(146, 30, 178) ,rgb(132, 27, 125));
+    font-family: Arial;
+    margin: 7px;
+    margin-top: 10px;
+}
+
+fieldset{
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(98, 43, 100);
+}
+
+.logo {
+    text-align: center;
+    padding: 10px;
+    margin: 35px 20px 80px 20px;
+}
+
+.centro {
+    text-align: center;
+}
+
+.botao_consulta{
+    background-color: rgb(47, 255, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 10px;
+}
