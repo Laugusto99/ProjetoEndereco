@@ -7,9 +7,6 @@ function buscarEndereco() {
     alert('Cep não encontrado!')
   }
 
-  document.getAnimations().style.display = 'none'
-  document.getAnimations().style.display = 'block'
-
   fetch(url).then(function (response) {
     response.json().then(mostrarEndereco)
   })
