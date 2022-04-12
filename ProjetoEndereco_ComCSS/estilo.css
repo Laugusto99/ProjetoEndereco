@@ -9,6 +9,8 @@ fieldset{
     color: white;
     border-radius: 15px;
     background-color: rgb(98, 43, 100);
+    max-width: 50%;
+    margin: auto;
 }
 
 .logo {
